@@ -1,3 +1,9 @@
+# Strudel-Open-Songs
+Open-Source Songs for Strudel.cc
+
+Calvin Harris - THINKING ABOUT YOU :
+
+
 setcpm(128/4)
 $: s("gm_electric_guitar_muted").n("0,2,13")
 .note(`
