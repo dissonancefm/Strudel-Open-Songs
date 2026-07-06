@@ -1,0 +1,21 @@
+setcpm(128/4)
+$: s("gm_electric_guitar_muted").n("0,2,13")
+.note(`
+<F3,G#3,D#4>
+<G3,A#3,G#4>
+<G#3,C4,G4>!3.5
+<A#3,D4,F4>!0.5
+<C3,D#4,G4>!2
+<F2,G#3,D#4>!4`
+.slow(4))
+.struct("<x ~ ~ x ~ ~ x ~ ~ x ~ ~ x ~ ~ x ~ ~ x ~ ~ x ~ ~ x ~ ~ x ~ ~ x ~>".fast(16))
+.rel(.3).lp(4600).resonance(4).diode(".7:.8").room(.1).delay(".3:.1:.1:.14")
+$: s("gm_lead_8_bass_lead")
+.note(`
+<F1><G1><G#1>!3.5<A#1>!0.5<C2>!2<F1>!4`
+.slow(4))
+.struct("<x ~ ~ x ~ ~ x ~ ~ x ~ ~ x ~ ~ x ~ ~ x ~ ~ x ~ ~ x ~ ~ x ~ ~ x ~>".fast(16))
+.rel(.21).lp(470).resonance(4).diode("2.3:.2")
+$: s("rolandcompurhythm78_bd,linnlm2_bd!4").postgain(2.4)
+$: s("<korgminipops_h dr220_oh>").n("<0 1 2 3>").rel(.21).gain("<.1 .2>").fast(8).speed(.9)
+$: s("<~ rolandtr707_cp>").fast(4).gain(.4).early(.01)
