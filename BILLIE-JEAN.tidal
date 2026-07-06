@@ -1,0 +1,39 @@
+# Strudel-Open-Songs
+Open-Source Songs for Strudel.cc
+
+Michael Jackson - Billie Jean :
+
+
+
+setcpm(209/4)
+$: s("<compurhythm1000_bd compurhythm1000_hh compurhythm1000_sd compurhythm1000_hh>")
+  .vel("<1 .26 1 .26>").fast(4).room(.05).speed(.96).dist(".9:1")
+$: s("minipops_hh!4").room(.03).speed(.96).vel(.4)
+
+$: s("gm_acoustic_bass")
+  .n(1)
+  .note("<f#2 c#2 e2 f#2 e2 c#2 b1 c#2>")
+  .fast(4)
+  .trans("<0@8 5@4 0@4>")
+  .att(.03)
+  .dist(".5:1.8")
+  .vel(.9)
+
+$: s("gm_acoustic_bass")
+  .n(4)
+  .note("<f#1 ~ ~ ~ ~ ~ f#1 ~ ~@8>")
+  .fast(8)
+  .trans("<0@8 5@4 0@4>")
+  .dist(".5:1.8")
+  .rel(.2)
+
+$: s("gm_string_ensemble_1,gm_soprano_sax,gm_voice_oohs").n("0,1")
+  .note("<<f#4,a4,c#5,f#5,c#6> ~ ~ ~ ~ ~ <d#4,g#4,d#5,g#5,d#6> ~ ~@8 <f#4,c#4,e5,a5,e6> ~ ~ ~ ~ ~ <d#4,g#4,d#5,g#5,d#6> ~ ~@8>")
+  .fast(8)
+  .clip(.8)
+  .rel(.3)
+  .att(.05)
+  .room(.44)
+  .vel(.1)
+  .dist(".5:.6")
+  .mask("<0@16 1@16>")
