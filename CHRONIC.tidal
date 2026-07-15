@@ -1,0 +1,23 @@
+# Strudel-Open-Songs
+Open-Source Songs for Strudel.cc
+
+Michael Jackson - Billie Jean :
+
+
+
+/*
+@title:chronic
+@by:dre
+song @by dr.dre
+*/
+setcpm(203/4)
+samples('github:dissonancefm/samples')
+$: s("sample16")
+  .loopAt(4).adsr(".0:.0:1:.0")
+  .soft(".3:.9")
+$: s("sample15")
+  .loopAt(4).adsr(".0:.0:1:.0")
+  .soft(".3:1").lpf(5234)
+$: s("b12").loopAt(4).gain(.52)
+$: s("b4").loopAt(4).gain(.6)
+$: s("bd:6!4").degradeBy(.5).rib(1,234).soft(".6:2.9")
