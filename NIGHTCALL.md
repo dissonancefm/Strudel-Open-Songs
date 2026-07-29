@@ -16,3 +16,4 @@ $: s("<~ sd:4>".fast(4)).vel(.4).room(.2)
 $: note("< [F5,A5,C5]!3 [~ ] [G5,B5,D5]!3 [~ ] [E5,G5,B5]!3 [~ ] [F5,A5,C5]!3 [~ ] >")
   .early("<0 .5 .5 .5>".slow(2)).vel(.6)
   .s("sawtooth").detune(-.5).fast(4).att(.1).bpf(156).diode("1.9:.5").rel(.4).bpa(.1).bpd(.9).orbit(2).mask("<0!8 1!8>")
+
